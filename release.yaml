@@ -19,9 +19,6 @@ jobs:
         with:
           token: ${{ secrets.PAT }}
 
-      - name: Install
-        uses: ./.github/actions/install
-
       - name: Install playwright
         run: npx playwright install
         
